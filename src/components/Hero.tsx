@@ -19,17 +19,23 @@ const Hero = () => {
               Specializing in full-stack development and modern web technologies.
             </p>
             <div className="flex gap-4 pt-4">
-              <Button variant="default" size="lg" className="gap-2">
-                <Mail className="h-5 w-5" />
-                Contact Me
+              <Button asChild variant="default" size="lg" className="gap-2">
+                <a href="mailto:your.email@example.com">
+                  <Mail className="h-5 w-5" />
+                  Contact Me
+                </a>
               </Button>
-              <Button variant="outline" size="lg" className="gap-2">
-                <Github className="h-5 w-5" />
-                GitHub
+              <Button asChild variant="outline" size="lg" className="gap-2">
+                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+                  <Github className="h-5 w-5" />
+                  GitHub
+                </a>
               </Button>
-              <Button variant="outline" size="lg" className="gap-2">
-                <Linkedin className="h-5 w-5" />
-                LinkedIn
+              <Button asChild variant="outline" size="lg" className="gap-2">
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+                  <Linkedin className="h-5 w-5" />
+                  LinkedIn
+                </a>
               </Button>
             </div>
           </div>
